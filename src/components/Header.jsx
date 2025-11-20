@@ -1,0 +1,34 @@
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+const Header = () => {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        {/* Nom de l'app */}
+        <a className="navbar-brand" href="#">Diccionari Musical</a>
+
+        {/* Boto responsive */}
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Enllaços */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#">Inici</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Artistes</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Contacte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Header;
