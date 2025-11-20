@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Muse — Will of the People Tour",
+      "city": "Barcelona",
+      "date": "2025-07-12",
+      "venue": "Palau Sant Jordi",
+      "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+      "description": "Rock simfònic i posada en escena espectacular."
+    },
+    {
+      "id": "2",
+      "title": "Norah Jones — Summer Nights",
+      "city": "Girona",
+      "date": "2006-03-14",
+      "venue": "Auditori",
+      "image": "https://content25.lecturas.com/medio/2025/11/14/aitana-ocana_5a9744f3_098_251114062953_1280x720.webp",
+      "description": "Jazz suau i íntim en un espai perfecte per a la seva veu."
+    },
+    {
+      "id": "3",
+      "title": "Zahara — Astronauta",
+      "city": "València",
+      "date": "2025-08-05",
+      "venue": "La Marina",
+      "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063",
+      "description": "Pop electrònic amb un directe potent i cuidat al detall."
+    }
+  ]
+}
