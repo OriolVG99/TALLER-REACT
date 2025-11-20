@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import EditEvent from './EditEvent';
 
 const Live = ({ event, onDelete, onUpdate }) => {
@@ -6,6 +7,8 @@ const Live = ({ event, onDelete, onUpdate }) => {
   const [showModal, setShowModal] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [loadingDelete, setLoadingDelete] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleConfirmDelete = async () => {
     setLoadingDelete(true);
@@ -38,7 +41,16 @@ const Live = ({ event, onDelete, onUpdate }) => {
             <p className="mb-0 text-muted">{event.city} - {event.date}</p>
           </div>
 
+        {/* Botons */}
           <div className="d-flex gap-2">
+          <button
+            type="button"
+            className="btn btn-sm btn-primary"
+            onClick={() => navigate(`/events/${event.id}`)}
+          >
+            Veure
+          </button>
+
             <button
               type="button"
               className={`btn btn-sm ${isExpanded ? 'btn-primary' : 'btn-outline-primary'}`}

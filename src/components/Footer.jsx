@@ -3,7 +3,7 @@ import logoImage from '../imatges/logo.png'; //Import del logo
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-3 mt-5">
+    <footer className="bg-dark text-white py-3 mt-5 fixed-bottom">
       <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
         
         {/* Logo */}

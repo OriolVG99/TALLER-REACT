@@ -20,7 +20,7 @@ const About = () => {
           <p className="lead mb-4">
             Benvinguts a la nostra aplicació d'esdeveniments musicals! Aquí podràs explorar informació sobre cançons, artistes i estils musicals. Tot el que necessites per descobrir nova música, en un sol lloc.
           </p>
-          <button className="btn btn-primary btn-lg">Entrar a l'app</button>
+          <button className="btn btn-primary btn-lg">Boto Activitat-1</button>
         </div>
 
       </div>
