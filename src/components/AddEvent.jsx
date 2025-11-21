@@ -34,15 +34,6 @@ const AddEvent = ({ showForm, setShowForm, onAdd }) => {
 
   return (
     <div className="mb-4">
-      <div className="d-flex justify-content-end">
-        <button
-          className="btn btn-primary mb-2"
-          onClick={() => setShowForm(!showForm)}
-        >
-          {showForm ? 'Amagar formulari' : 'Nou esdeveniment'}
-        </button>
-      </div>
-
       {showForm && (
         <form onSubmit={handleSubmit} className="border rounded">
           <div className="d-flex justify-content-between align-items-center p-2 bg-body-secondary text-black rounded-top mb-2">

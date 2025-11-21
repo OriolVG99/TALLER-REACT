@@ -1,26 +1,26 @@
+import { Link } from 'react-router-dom';
 const Inici = () => (
   <div className="container mt-5">
     <div className="row align-items-center">
       {/* Columna de text a la esquerra */}
       <div className="col-md-6">
-        <h1 className="fw-bold">Benvingut a OriolMusic</h1>
-        <p>
-          Explora els esdeveniments musicals en viu i descobreix nous artistes.<br></br>
-          OriolMusic es la teva plataforma per connectar amb la música que estimes.
-        </p>
-        <p>
-          Aqui trobaras concerts, festivals i experiencies uniques que et faran vibrar.<br></br>
-          Uneix-te a la comunitat i viu la música com mai abans!
-        </p>
+        <h1 className="fw-bold mb-4" style={{ fontSize: "65px", lineHeight: "1.2" }}>Esdeveniments en viu</h1>
+        <h5 className='mb-4'>
+          Descobreix els millors concerts i esdeveniments msicals.<br></br>
+          Gestiona la teva agenda cultural i no et perdis cap espectacle.
+        </h5>
+        {/* Botons amb enllaços */}
+        <Link to="/events" className="btn btn-primary me-2 btn-lg">Veure esdeveniments</Link>
+        <Link to="/about" className="btn btn-outline-secondary btn-lg">Contacte</Link>
       </div>
 
       {/* Columna d'imatge a la dreta */}
       <div className="col-md-6 text-center">
         <img
-          src="src/imatges/logo.png"
+          src="src/imatges/foto.png"
           alt="Logo OriolMusic"
-          className="img-fluid"
-          style={{ maxWidth: "400px" }}
+          className="img-fluid rounded"
+          style={{ maxWidth: "1000px" }}
         />
       </div>
     </div>

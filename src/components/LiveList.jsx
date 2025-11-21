@@ -80,18 +80,27 @@ const LiveList = () => {
     return <div>Carregant esdeveniments...</div>;
   }
 
-  return (
+return (
     <div className="container mt-5 p-0">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2 className="mb-0">Esdeveniments en viu</h2>
-        {/* Boto per ordenar */}
-        <button
-          className="btn btn-outline-secondary"
-          onClick={handleSort}
-          disabled={isSorted}
-        >
-          ↓ Ordena per data
-        </button>
+        <div className="d-flex gap-2">
+          {/* Boto per ordenar */}
+          <button
+            className="btn btn-outline-secondary btn-sm"
+            onClick={handleSort}
+            disabled={isSorted}
+          >
+            ↓ Ordena per data
+          </button>
+          {/* Boto per mostrar/amagar formulari */}
+          <button
+            className={`btn ${showForm ? "btn-primary" : "btn-primary"} btn-sm`}
+            onClick={() => setShowForm(!showForm)}
+          >
+            {showForm ? "Amagar formulari" : "Nou esdeveniment"}
+          </button>
+        </div>
       </div>
 
       {/* Formulari visible/amagat */}

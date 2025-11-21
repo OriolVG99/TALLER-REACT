@@ -18,13 +18,13 @@ const Footer = () => {
 
         {/* Xarxes socials */}
         <div>
-          <a href="#" className="text-white me-3 fs-5">
-            <i className="bi bi-twitter"></i>
+          <a href="https://twitter.com" target="_blank"  rel="noopener noreferrer" className="text-white me-3 fs-5">
+            <i className="bi bi-twitter" style={{ color: 'deepskyblue ' }}></i>
           </a>
-          <a href="#" className="me-3 fs-5" style={{ color: 'pink' }}>
-            <i className="bi bi-instagram"></i>
+          <a href="https://instagram.com" target="_blank"  rel="noopener noreferrer" className="me-3 fs-5">
+            <i className="bi bi-instagram" style={{ color: 'hotpink' }}></i>
           </a>
-          <a href="#" className="text-white fs-5">
+          <a href="https://github.com" target="_blank"  rel="noopener noreferrer" className="text-white fs-5">
             <i className="bi bi-github"></i>
           </a>
         </div>
